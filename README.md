@@ -1,3 +1,6 @@
+Alicia Muñoz Espinosa
+UAEIS
+
 TODO: Add more to the title of your project here
 
 # LearningR:
