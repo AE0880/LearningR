@@ -62,3 +62,29 @@ ggplot(post_meal_data, aes(x = BMI)) +
 ggplot(post_meal_data, aes(x = BMI)) +
   geom_histogram()
 ```
+
+## Excercise: discrete plots
+
+```{r}
+#| fig-cap: "Personas con medición de glicemia"
+#| label: fig-conteo-glicemia
+ggplot(post_meal_data, aes(x = glykemi)) +
+  geom_bar()
+```
+
+## Plotting two discrete variables
+
+```{r}
+ggplot(post_meal_data, aes(x = Group, fill = glykemi)) +
+  geom_bar()
+```
+
+```{r}
+ggplot(post_meal_data, aes(x = Group, fill = as.character(glykemi))) +
+  geom_bar()
+```
+
+```{r}
+ggplot(post_meal_data, aes(x = Group, fill = as.character(glykemi))) +
+  geom_bar(position = position_dodge())
+```
