@@ -1,0 +1,44 @@
+---
+title: "Reproducible documents"
+author: "Alicia Muñoz Espinosa"
+format: html
+editor: visual
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## "About me"
+
+- Alicia
+
+- UAEIS
+
+**Researcher** with focus in *Public Health*
+
+## "Simple code"
+
+```{r}
+3 * 3
+```
+
+```{r}
+2 + 2
+```
+
+```{r}
+library(tidyverse)
+
+post_meal_data <- read_csv2(here::here("data/post-meal-insulin.csv"))
+```
+
+## Showing the data
+
+```{r}
+post_meal_data
+```
+
+```{r}
+glimpse(post_meal_data)
+```
