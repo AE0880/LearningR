@@ -5,6 +5,8 @@ format: html
 editor: visual
 ---
 
+RANDOM SENTENCE SOMEWHERE NEAR THE TOP OF THE FILE (BELOW THE YAML HEADER)
+
 ```{r setup}
 library(tidyverse)
 ```
@@ -118,7 +120,7 @@ ggplot(post_meal_data, aes(x = glykemi)) +
   geom_bar()
 ```
 
-## Plotting two continous variables 
+## Plotting two continous variables
 
 ```{r}
 ggplot(post_meal_data, aes(x = BMI, y = auc_pg)) +
