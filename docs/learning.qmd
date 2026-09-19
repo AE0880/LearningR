@@ -259,3 +259,12 @@ post_meal_data |>
   ) |> 
   filter(percent_body_fat > 30)
 ```
+
+## Visualizing with a jitter plot
+
+```{r}
+tidied_post_meal_Data |> 
+  mutate(overweight = if_else(BMI >= 25, "Overweight", "Not overweight")) |> 
+  ggplot(aes(x = overweight, y = insulin_glucose_ratio)) +
+  geom_jitter()
+```
