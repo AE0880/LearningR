@@ -306,3 +306,19 @@ tidied_post_meal_Data |>
     y = "Insulin to glucose ratio"
   )
 ```
+
+## Make multidimensional plots!
+
+```{r}
+#| label: fig-multidimensional
+#| fig-cap: "Two, multidimensional plots of our data"
+#| fig-subcap: 
+#|    - "Distribution of percent body fat by group and age category"
+#|    - "Relationship between BMI and bone mineral density, split by insulin sensitivity"
+#| layout-ncol: 2
+# Task 1.
+post_meal_data |> 
+  mutate(
+    
+  )
+```
