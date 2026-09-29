@@ -353,3 +353,24 @@ post_meal_data |>
   geom_point() +
   scale_colour_viridis_c(option = "inferno")
 ```
+
+## Calculating summary statistics
+
+```{r}
+tidied_post_meal_Data |> 
+  summarise(max_bmi = max(BMI, na.rm = TRUE),
+            min_bmi = min(BMI, na.rm = TRUE)
+  )
+```
+
+## Summarise with group by
+
+```{r}
+tidied_post_meal_Data|> 
+  group_by(Group) |> 
+  summarise(
+    mean_age = mean(Age),
+    mean_bmi = mean(BMI)
+  ) |> 
+  ungroup()
+```
